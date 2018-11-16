@@ -9,7 +9,6 @@
 		
 		if($mealId == $maxID) {
 			 
-			echo $_POST['categ'];
 			$categID = mysqli_fetch_array(Request($link, "SELECT id FROM category WHERE name = '".$_POST['categ']."'"), MYSQLI_ASSOC)['id'];
 			$unitID = mysqli_fetch_array(Request($link, "SELECT id FROM unit WHERE name = '".$_POST['unit']."'"), MYSQLI_ASSOC)['id'];
 			

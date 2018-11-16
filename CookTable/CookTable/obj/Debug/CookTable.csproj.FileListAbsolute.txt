@@ -1,0 +1,9 @@
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\bin\Debug\CookTable.exe.config
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\bin\Debug\CookTable.exe
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\bin\Debug\CookTable.pdb
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\obj\Debug\CookTable.csprojResolveAssemblyReference.cache
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\obj\Debug\CookTable.Cooker.resources
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\obj\Debug\CookTable.Properties.Resources.resources
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\obj\Debug\CookTable.csproj.GenerateResource.Cache
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\obj\Debug\CookTable.exe
+c:\users\olehk\documents\visual studio 2012\Projects\CookTable\CookTable\obj\Debug\CookTable.pdb
