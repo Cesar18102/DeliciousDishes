@@ -21,7 +21,7 @@ namespace CookTable {
 
         public void SetProducts() {
 
-            products = Server.Deserialize<List<Product>>(Server.PostQuery(Constants.QueryURL, "query=SELECT U.id, P.name, U.amount, (SELECT UN.name FROM unit UN WHERE UN.id = P.unit_id) AS unit FROM used_product U, product P, storage_product STP WHERE U.storage_product_id = STP.id AND STP.product_id = P.id AND U.offered_meal_id = " + id + "&pas=Delishes228"));
+            products = Server.Deserialize<List<Product>>(Server.PostQuery(Constants.QueryURL, "query=SELECT U.id, P.name, TRUNCATE(U.amount, 3) AS amount, (SELECT UN.name FROM unit UN WHERE UN.id = P.unit_id) AS unit FROM used_product U, product P, storage_product STP WHERE U.storage_product_id = STP.id AND STP.product_id = P.id AND U.offered_meal_id = " + id + "&pas=Delishes228"));
         }
     }
 }

@@ -47,8 +47,8 @@ namespace CookTable
                     offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["Comment"].Value = offers[i].comment;
                     offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["Reciepe"].Value = "Перейти к рецепту";
 
-                    offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["CookStart"].Value = offers[i].meals[j].state_id >= 1;
-                    offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["State"].Value = offers[i].meals[j].state_id >= 2;
+                    offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["CookStart"].Value = offers[i].meals[j].state_id >= 2;
+                    offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["State"].Value = offers[i].meals[j].state_id >= 3;
 
                     offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["OfferIdHidden"].Value = i;
                     offeredmeals.Rows[offeredmeals.RowCount - 1].Cells["OfferedMealIdHidden"].Value = j;
@@ -136,7 +136,7 @@ namespace CookTable
             string message = meal.reciepe;
             foreach (Product i in meal.products) {
 
-                message = message.Substring(0, message.IndexOf("%a")) + ((double)i.amount / meal.amount).ToString() + message.Substring(message.IndexOf("%a") + 2);
+                message = message.Substring(0, message.IndexOf("%a")) + (Convert.ToDouble(i.amount) / meal.amount).ToString() + message.Substring(message.IndexOf("%a") + 2);
                 message = message.Substring(0, message.IndexOf("%u")) + i.unit + message.Substring(message.IndexOf("%u") + 2);
                 message = message.Substring(0, message.IndexOf("%p")) + i.name + message.Substring(message.IndexOf("%p") + 2);
             }
