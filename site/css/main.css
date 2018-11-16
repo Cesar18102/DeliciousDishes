@@ -1,0 +1,380 @@
+.menu {
+position: relative;
+bottom:6px
+}
+.menuHeader {
+color: white;
+font-size: 40px;
+}
+a {
+	font-size: 160%;
+}
+.menu__drop {
+	position: absolute;
+	opacity: 0;
+	background-color: #2C465A;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	color: white;
+	size: 100%;
+}
+#header{
+border-bottom: 1px solid black;
+}
+body {
+	font-family: 'Sintony', sans-serif;
+	background-color: #2C465A;
+}
+.cbalink {
+display: none;
+}
+ul, li { 
+
+	display: block;
+	padding: 0;
+	margin: 0;
+}
+p {
+	line-height: 1.8em;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: white;
+}
+.yellow {
+	color: #fea100;
+}
+.menu {
+	margin-top: 10px;
+}
+.menu__item {
+	font-weight: 700;
+	font-size: 14px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.menu__item1{
+	font-weight: 700;
+	font-size: 14px;
+	padding-left:15px;
+	padding-right:15px;
+}
+.cta {
+	background: #fea100;
+	color: #fff;
+	font-size: 20px;
+	border-radius: 3px;
+	text-transform: uppercase;
+	justify-content: right;
+	padding: 13px 0;
+	font-weight: 700;
+	display: inline;
+	cursor: pointer;
+	border: 0;
+	margin-top: -5px;
+	text-align: center;
+	transition : color 1s;	
+}
+.menu__item a {
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	-webkit-transition: all.6s ease;
+    -o-transition: all.6s ease;
+	-ms-transition: all.6s ease;
+	-moz-transition: all.6s ease;
+	transition: all.6s ease;
+	margin-top: 30px;
+	text-align: center;
+	}
+.menu__item:hover{
+background-color: #fea100;
+box-shadow: 1px 5px 10px -5px black;
+}
+.cta:hover {
+	text-decoration: none;
+	color: #000;
+	transition : color 1s;
+}
+.book {
+width: 120%;
+}
+.book__icon {
+	background: url('../img/order.png');
+	width: 21px;
+	height: 17px;
+	display: block;
+	margin-right: 13px;
+	position: relative;
+	top: 2px;
+}
+.menu-table {
+display: flex;
+justify-content: center;
+}
+.main-header {
+	padding: 20px 0;
+}
+.offer {
+	background: url('../img/first-bg.jpg') no-repeat center top;
+}
+.title {
+	padding: 210px 0;
+}
+.title__heading {
+	font-size: 56px;
+	color: #fff;
+}
+.title__desc {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	font-size: 40px;
+	color: #fff;
+	margin-top: -15px;
+}
+.title__desc span {
+	color: #fea100;
+}
+.call {
+	background: #535A56;
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	padding: 30px 0;
+}
+.phone {
+	width: 455px;
+}
+.phone__text {
+	background: url('../img/phone.png') no-repeat left center;
+	color: white;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	width: 180px;
+	padding-left: 56px;
+	padding-top: 5px;
+}
+.phone__text span {
+	font-size: 16px;
+	margin-top: -4px;
+	display: block;
+}
+.phone__digits {
+	width: 100%;
+	font-size: 32px;
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+	color: white;
+	margin-left: 42px;
+	margin-top: -5px;
+}
+.digit {
+
+	position: absolute;
+	display: inline;
+	cursor : pointer;
+	top : 1vh;
+} 
+#d1 {
+	left : 38vw; }
+#d2 {
+	left : 39.5vw; }
+#d3 {
+	left : 41vw; }
+#d4 {
+	left : 42.5vw; }
+#d5 {
+	left : 44vw; }
+#d6 {
+	left : 45.5vw; }
+#d7 {
+	left : 47vw; }
+#d8 {
+	left : 48.5vw; }
+#d9 {
+	left : 50vw; }
+#d10 {
+	left : 51.5vw; }
+#d11 {
+	left : 53vw; }
+#d12 {
+	left : 54.5vw; }
+#d13 {
+	left : 56vw; 
+	}
+.digit:hover {
+
+	font-size : 1.2em;
+	top : 0.3vh;
+	transition : font-size 1s, top 0.1s;
+} 
+.history {
+	margin-top: 60px;
+}
+.history__title {
+	font-size: 35px;
+	margin-bottom: 25px;
+}
+.history__text {
+	font-size: 14px;
+	color: white;
+}
+.history__button {
+	width: 148px;
+	margin-top: 48px;
+	position: relative;
+	top: 50px;
+	left: 30px;
+}
+.about {
+	padding: 65px 0 100px;
+}
+.food-images {
+
+}
+.food-images__item {
+	margin-bottom: 10px;
+}
+.food-images-down {
+	margin-top: 50px;
+}
+.special {
+	background: url('../img/third-bg.jpg') no-repeat center top;
+	padding-top: 80px;
+}
+.special-title {
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+}
+.food {
+	text-align: center;
+	box-shadow: 0 20px 90px rgba(0,0,0,0.15);
+	margin-bottom: 130px;
+	margin-top: 20px;
+}
+.food__img {
+	margin-bottom: 45px;
+}
+.food__title {
+	font-size: 26px;
+	margin-bottom: 10px;
+}
+.food__desc {
+	font-size: 14px;
+	padding: 0 50px;
+	color:white;
+}
+.food__details {
+	border-top: 1px solid #e1e1e1;
+	margin: 0 45px;
+	text-align: left;
+	color: white;
+	padding: 19px 0;
+}
+.food__del {
+	text-transform: uppercase;
+	font-size: 13px;
+	width: 78px;
+	border-right: 1px solid #e1e1e1;
+	margin-right: 18px;
+	font-weight: 700;
+}
+.food__del span {
+	color: #fe4c8d;
+}
+.food__price {
+	font-size: 30px;
+	font-family: 'Playfair Display', serif;
+}
+.footer {
+	background: #373844;
+	color: #93989e;
+	font-size: 13px;
+	text-transform: uppercase;
+	padding: 72px 106px;
+}
+.socials {
+
+}
+.socials__item a {
+	width: 52px;
+	height: 52px;
+	border-radius: 50%;
+	display: block;
+}
+.socials__item_fb a {
+	background: #3b5998 url('../img/fb.png') no-repeat center center;
+}
+.socials__item_tw a {
+	background: #55acee url('../img/tw.png') no-repeat center center;
+	margin: 0 7px;
+}
+.socials__item_g a {
+	background: #dd4b39 url('../img/g.png') no-repeat center center;
+}
+.line {
+	background: #52535e;
+	height: 1px;
+	margin-top: 7px;
+	margin-top: 50px;
+}
+.credits {
+	margin-top: 43px;
+	text-align: center;
+}
+.r-menu {
+	align: center;
+	width: 100%;
+	height: 30%;
+	visibility: 0;
+}
+.map__title {
+position: relative;
+left: 540px;
+}
+.modal2 {
+	display: none;
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.modal2__overlay {
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+}
+.modal2__body {
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	background: #fff;
+	margin-left: -200px;
+	margin-top: -100px;
+	border-radius: 10px;
+	box-shadow: 0 0 50px black;
+}
+.show {
+	display: block !important;
+}
+.desc {
+	width: 70%;
+}
+.afterOfferDiv {
+
+        margin-top : 24%;
+        font-size : 2.5em;
+        color : white;
+}
+.acceptRedact {
+	size:20%;
+}

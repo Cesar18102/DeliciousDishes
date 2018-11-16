@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ресторан</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:700|Sintony:400,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/main.css">
+        <script src = "libs/glm-ajax.js"></script>
+	<script src = "libs/jquery-3.3.1.js"></script>
+</head>
+<body>
+
+	<header id="header" class="header">
+		<div class="main-header">
+			<table class="menu-table">
+					<tr>
+					    <td class ="menu_item">
+						    <img src="img/logo.png">
+						</td>
+					    <td class="menu__item" id="ibt">
+						    <a href="index.html">
+							    Главная
+						    </a>
+					    </td>
+						<td class="menu__item" id="cbt">
+						    <a href="contacts.html">
+							    О нас
+						    </a>
+					    </td>
+					    <td class="menu__item" id="mbt">
+						    <a href="menu.php">
+							    Меню
+						    </a>
+					    </td>
+					    <td class="menu__item1">
+						<button class="book cta d-flex justify-content-center" onclick = 'document.location = "cart.php";'>
+							<span class="book__icon"></span>
+							Корзина
+						</button>
+						</td>
+					</tr>
+			</table>
+		</div>
+    </header>
+		<div class="offer">
+			<div class="container" background-image="img/first-bg.jpg">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title">
+							<h1 class="title__heading">
+								Лучший ресторан
+							</h1>
+							<p class="title__desc">
+								в
+								<span>
+									Солнечной системе
+								</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<section id="call" class="call">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 phonebg">
+
+					<div class="phone d-flex ml-auto mr-auto">
+						<div class="phone__text">
+							Call us Now for
+							<span class="yellow">
+								Home Delivery
+							</span>
+						</div>
+						<div class="phone__digits">
+							<div>
+								<div id = 'd1' class="digit">1</div>
+								<div id = 'd2' class="digit">-</div>
+								<div id = 'd3' class="digit">3</div>
+								<div id = 'd4' class="digit">3</div>
+								<div id = 'd5' class="digit">7</div>
+								<div id = 'd6' class="digit">&nbsp</div>
+								<div id = 'd7' class="digit">2</div>
+								<div id = 'd8' class="digit">2</div>
+								<div id = 'd9' class="digit">9</div>
+								<div id = 'd10' class="digit">&nbsp</div>
+								<div id = 'd11' class="digit">3</div>
+								<div id = 'd12' class="digit">2</div>
+								<div id = 'd13' class="digit" >2</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="history">
+						<h2 class="history__title">
+							Про ресторан
+						</h2>
+						<p class="history__text" align="justify">
+							Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего видав и т.д. Так как цель применения такого текста исключительно демонстрационная, то  смысловую нагрузку ему нести совсем необязательно. Более того, нечитабельность текста сыграет на руку при оценке качества восприятия макета.
+						</p>
+						<a href="#" class="cta history__button">
+							Читать еще
+						</a>
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="food-images food-images-down">
+						<img src="img/food1.jpg" alt="Pasta" class="food-images__item">
+						<img src="img/food2.jpg" alt="Chicken" class="food-images__item">
+					</div>
+				</div>
+				<div class="col-lg-3">
+					<div class="food-images">
+						<img src="img/food3.jpg" alt="Meat" class="food-images__item">
+						<img src="img/food4.jpg" alt="Fish" class="food-images__item">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="special" class="special">
+		<div class="container">
+
+			<div class="row">
+				<div class="col-lg-12">
+					<h2 class="special-title">
+						Блюдо дня
+					</h2>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6">
+					<div class="food">
+						<img src="img/dish1.jpg" alt="Dish 1" class="food__img img-fluid">
+						<h3 class="food__title">
+							Какая-то еда
+						</h3>
+						<p class="food__desc" align ="justify">
+						Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида
+						</p>
+						<div class="food__details d-flex">
+							<div class="food__del">
+								Доставка
+								<span>
+									Домой
+								</span>
+							</div>
+							<div class="food__price yellow ml-auto">
+								<sup>$</sup>
+								89.00
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6">
+					<div class="food">
+						<img src="img/dish.jpg" alt="Dish 1" class="food__img img-fluid">
+						<h3 class="food__title">
+							Какая-то другая еда
+						</h3>
+						<p class="food__desc" align ="justify">
+						Каждый веб-разработчик знает, что такое текст-«рыба». Текст этот, несмотря на название, не имеет никакого отношения к обитателям водоемов. Используется он веб-дизайнерами для вставки на интернет-страницы и демонстрации внешнего вида
+						</p>
+						<div class="food__details d-flex">
+							<div class="food__del">
+								Доставка
+								<span>
+									Домой
+								</span>
+							</div>
+							<div class="food__price yellow ml-auto">
+								<sup>$</sup>
+								89.00
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer id="footer" class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<ul class="socials d-flex justify-content-center">
+						<li class="socials__item socials__item_fb">
+							<a href="#"></a>
+						</li>
+						<li class="socials__item socials__item_tw">
+							<a href="#"></a>
+						</li>
+						<li class="socials__item socials__item_g">
+							<a href="#"></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<div class="line"></div>
+				</div>
+				<div class="col-lg-4">
+					<div class="credits">
+						2018 ©   All rights reserved
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<div class="line"></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="js/main.js"></script>
+</body>
+</html>	

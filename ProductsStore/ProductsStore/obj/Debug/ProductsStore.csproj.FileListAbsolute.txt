@@ -1,0 +1,9 @@
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\bin\Debug\ProductsStore.exe.config
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\obj\Debug\ProductsStore.csprojResolveAssemblyReference.cache
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\obj\Debug\ProductsStore.Storage.resources
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\obj\Debug\ProductsStore.Properties.Resources.resources
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\obj\Debug\ProductsStore.csproj.GenerateResource.Cache
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\bin\Debug\ProductsStore.exe
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\bin\Debug\ProductsStore.pdb
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\obj\Debug\ProductsStore.exe
+c:\users\olehk\documents\visual studio 2012\Projects\ProductsStore\ProductsStore\obj\Debug\ProductsStore.pdb
