@@ -27,13 +27,9 @@
 			foreach($meal['ids'] as $pr_id) {
 				
 				$queryUseProducts = "UPDATE storage_product SET amount = amount - ".$pr_id['used']." WHERE id = ".$pr_id['id'];
-				echo $queryUseProducts;
-				
 				Request($link, $queryUseProducts);
 				
 				$queryArchieveProducts = "INSERT INTO used_product VALUES(0, ".$pr_id['id'].", ".$offeredMealId.", ".$pr_id['used'].");";
-				echo $queryArchieveProducts;
-				
 				Request($link, $queryArchieveProducts);
 			}
 			

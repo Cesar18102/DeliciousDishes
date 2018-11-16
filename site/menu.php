@@ -53,7 +53,7 @@
 			
 			$query =   "SELECT menu_info.id, menu_info.name, menu_info.description, menu_info.price, menu_info.weight, menu_info.unit, MAX(menu_info.ingrs_text) ingrs_text 
 						FROM (SELECT DISTINCT MN.id, ML.name, ML.description, MN.price, MN.weight, (SELECT U.name FROM unit U WHERE ML.unit_id = U.id) AS unit, @oldid := @id AS prev_info_id, @id := MN.id AS cur_info_id, 
-									@ingrs := CONCAT(IF(@oldid = @id, CONCAT(@ingrs, '<br/>'), ''), ttl_cnts.name, ': ', IF(I.fixed_amount, I.amount, TRUNCATE(I.amount * MN.weight / ML.weight, 3)), ' ', 
+									@ingrs := CONCAT(IF(@oldid = @id, CONCAT(@ingrs, '<br/>'), ''), ttl_cnts.name, ': ', IF(I.fixed_amount, I.amount, TRUNCATE(I.amount * MN.weight / ML.weight, IF((SELECT COUNT(U.name) FROM unit U WHERE ML.unit_id = U.id AND U.name = 'шт.') = 1, 0, 3))), ' ', 
 															(SELECT U.name 
 															FROM unit U, product P
 															WHERE P.unit_id = U.id AND P.id = ttl_cnts.id)) ingrs_text

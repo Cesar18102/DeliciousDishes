@@ -96,14 +96,13 @@
 			
 			$query =   "SELECT menu_info.id, menu_info.name, menu_info.description, menu_info.price, menu_info.weight, menu_info.unit, MAX(menu_info.ingrs_text) ingrs_text 
 						FROM (SELECT DISTINCT MN.id, ML.name, ML.description, MN.price, MN.weight, (SELECT U.name FROM unit U WHERE ML.unit_id = U.id) AS unit, @oldid := @id AS prev_info_id, @id := MN.id AS cur_info_id, 
-									@ingrs := CONCAT(IF(@oldid = @id, CONCAT(@ingrs, '<br/>'), ''), ttl_cnts.name, ': ', IF(I.fixed_amount, I.amount, TRUNCATE(I.amount * MN.weight / ML.weight, 3)), ' ', 
+									@ingrs := CONCAT(IF(@oldid = @id, CONCAT(@ingrs, '<br/>'), ''), ttl_cnts.name, ': ', IF(I.fixed_amount, I.amount, TRUNCATE(I.amount * MN.weight / ML.weight, IF((SELECT COUNT(U.name) FROM unit U WHERE ML.unit_id = U.id AND U.name = 'шт.') = 1, 0, 3))), ' ', 
 															(SELECT U.name 
 															FROM unit U, product P
 															WHERE P.unit_id = U.id AND P.id = ttl_cnts.id)) ingrs_text
-							FROM menu MN, meal ML, reciepe R, ingredient I LEFT JOIN (SELECT P.id, P.name, SUM(S.amount) AS strd_cnt
-																						FROM product P, storage_product S
-																						WHERE P.id = S.product_id GROUP BY P.id) ttl_cnts
-																			ON ttl_cnts.id = I.product_id AND ttl_cnts.strd_cnt >= I.amount
+							FROM menu MN, meal ML, reciepe R, ingredient I LEFT JOIN (SELECT P.id, P.name
+																					  FROM product P) ttl_cnts
+																			ON ttl_cnts.id = I.product_id
 							WHERE I.reciepe_id = R.id AND ML.id = R.meal_id AND MN.meal_id = ML.id) menu_info
 						WHERE menu_info.ingrs_text IS NOT NULL GROUP BY menu_info.id;";
 
@@ -113,7 +112,7 @@
 		
 			<center id = "authForm" style = "margin-bottom : 15%; margin-top : 15%;">
 				<label for = "hash"><h3>Пароль: &nbsp</h3></label>
-				<input name = "hash" id = "hash" placeholder = "Your password" required></input>
+				<input name = "hash" id = "hash" type = "password" required></input>
 				<button onclick = "auth()">Войти</button>
 			</center>
 
